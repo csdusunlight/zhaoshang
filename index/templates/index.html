@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="banner">
-                <div class="flexslider flexslider1" style="height: 586px;">
+                <div class="flexslider flexslider1">
                     <ul class="slides">
                         <li class="banner__img" style="background: url({% static 'images/banner.png' %}) center center no-repeat;">
                         </li>
@@ -269,7 +269,7 @@
                     fields: {
                         'url': 'url',
                         'name': 'required',
-                        'mobile': 'required;mobile',
+                        'tel': 'required;mobile',
                         'qq': 'required;qq'
                     },
                     theme: 'simple_bottom',
@@ -285,13 +285,14 @@
                         var wangwang = $('input[name="wangwang"]').val();
                         console.log(url + ', '+ name + ', ' + mobile + ', ' + qq + ', ' + wangwang + ', ');
                         $.ajax({
-                            url: '',
+                            url: '/',
                             dataType: 'json',
                             type: 'POST',
                             data: {
+                                csrfmiddlewaretoken: '{{ csrf_token }}',
                                 url: url,
                                 name: name,
-                                mobile: mobile,
+                                tel: mobile,
                                 qq: qq,
                                 wangwang: wangwang
                             },

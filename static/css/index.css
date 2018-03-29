@@ -7,12 +7,10 @@
     background-color: #f0f0f0;
 }
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
     width: 100%;
-    height: 80px;
+    height: 60px;
     line-height: 60px;
     overflow: hidden;
     z-index: 100;
@@ -32,7 +30,7 @@
 }
 .banner {
     width: 100%;
-    /*margin-top: 2px;*/
+   height: 586px;
 }
 .banner__img {
     height: 586px;
@@ -53,10 +51,11 @@
     text-align: center;
 }
 .common__title {
+    padding-top: 10px;
     text-align: center;
     font-size: 28px;
     color: #333;
-    line-height: 150px;
+    line-height: 140px;
 }
 .ask__box {
     padding-bottom: 10px;
@@ -142,13 +141,6 @@
     height: 410px;
     overflow: hidden;
 }
-/*.cooperate__bg {
-    width: 100%;
-    height: 900px;
-    margin-top: 400px;
-    margin-top: 550px;
-    background: url(../images/bg-cooprate.png) center center no-repeat;
-}*/
 .parallax-wrapper {
   position: relative;
   height: 410px;
@@ -194,7 +186,7 @@
 }
 .common__title-tips {
     position: relative;
-    top: -50px;
+    top: -40px;
     text-align: center;
     color: #333333;
     font-size: 18px;
@@ -207,6 +199,7 @@
     margin-bottom: 30px;
     width: 440px;
     height: 52px;
+    font-size: 16px;
     border: 1px solid #d5d5d5;
     border-radius: 4px;
 }
