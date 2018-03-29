@@ -14,7 +14,22 @@ class IndexView(View):
         template = 'index.html'
         return render(request, template)
     def post(self, request): 
-        content = '见好就收的情况，参加会议纪要！'
+        url = request.POST.get('url', '')
+        name = request.POST.get('name', '')
+        tel = request.POST.get('tel', '')
+        qq = request.POST.get('qq', '')
+        wangwang = request.POST.get('wangwang', '')
+        content = ''
+        if url:
+            content = '商家店铺链接：' + url + '\n'
+        if name:
+            content = '联系人姓名：' + name + '\n'
+        if tel:
+            content = '联系人电话：' + tel + '\n'
+        if qq:
+            content = '联系人QQ：' + qq + '\n'
+        if wangwang:
+            content = '联系人旺旺：' + wangwang + '\n'
         send_email('690501772@qq.com', '会议纪要', content)
         return JsonResponse({'code':0})
     
