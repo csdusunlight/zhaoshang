@@ -296,8 +296,12 @@
                                 qq: qq,
                                 wangwang: wangwang
                             },
-                            success: function () {
-                                
+                            success: function (ret) {
+                                if (ret.code == 0) {
+                                    alert('提交成功')
+                                } else {
+                                    console.log(ret);
+                                }
                             },
                             error: function () {
                                 alert('网络错误')

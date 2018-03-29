@@ -21,7 +21,7 @@ class IndexView(View):
         wangwang = request.POST.get('wangwang', '')
         content = ''
         if url:
-            content += '商家店铺链接：' + url + '\n'
+            content += '商家店铺链接：' + 'https://wafuli.cn/' + '\n'
         if name:
             content += '联系人姓名：' + name + '\n'
         if tel:
@@ -30,8 +30,9 @@ class IndexView(View):
             content += '联系人QQ：' + qq + '\n'
         if wangwang:
             content += '联系人旺旺：' + wangwang + '\n'
-        send_email('690501772@qq.com', '会议纪要', content)
-        return JsonResponse({'code':0})
+        print (content)
+        code = send_email('690501772@qq.com', '会议纪要', content)
+        return JsonResponse({'code':code})
     
 
 
@@ -40,7 +41,7 @@ def send_email(to_email, subject, content):
     mail_user="hunanjinyezi@126.com"    #用户名
     mail_pass="jinyezi520"   #口令 
     mail_postfix="126.com"  #发件箱的后缀
-    msg = MIMEText(content,_subtype='plain',_charset='utf-8') #创建一个实例，这里设置为html格式邮件
+    msg = MIMEText(content,_subtype='html',_charset='utf-8') #创建一个实例，这里设置为html格式邮件
     msg['Subject'] = subject    #设置主题
     msg['From'] = u"福利联盟<" + mail_user + ">"
     msg['To'] = to_email
@@ -52,6 +53,7 @@ def send_email(to_email, subject, content):
         s.close()  
         return 0
     except Exception as e:
+        print('error')
         print (e)
         return 1
 
