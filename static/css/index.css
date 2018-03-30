@@ -4,6 +4,7 @@
     margin-right: auto;
 }
 .bgc {
+    min-width: 1110px;
     background-color: #f0f0f0;
 }
 .header {
@@ -29,7 +30,8 @@
     color: #e53f43;
 }
 .banner {
-    width: 100%;
+   width: 100%;
+   min-width: 1110px;
    height: 586px;
 }
 .banner__img {
@@ -75,56 +77,39 @@
     margin-left: 300px;
 }
 .support__item {
-    padding-top: 230px;
     display: inline-block;
     width: 25%;
     height: 300px;
-    background-position: center 38px;
-    background-repeat: no-repeat;
+}
+.support__img {
+    display: block;
+    margin: 30px auto 40px;
+    width: 220px;
+    height: 144px;
+}
+.support__item-txt {
     text-align: center;
     font-size: 16px;
     color: #999;
 }
-.support__item:nth-child(1) {
-    background-image: url(../images/icon-support-1.png);
-}
-.support__item:nth-child(2) {
-    background-image: url(../images/icon-support-2.png);
-}
-.support__item:nth-child(3) {
-    background-image: url(../images/icon-support-3.png);
-}
-.support__item:nth-child(4) {
-    background-image: url(../images/icon-support-4.png);
-}
 .goodness__item {
     display: inline-block;
-    padding: 240px 20px 0;
+    padding: 0 20px 0;
     height: 400px;
     width: 33.3333%;
-    background-position: center 70px;
-    background-repeat: no-repeat;
+    vertical-align: top;
+}
+.goodness__img {
+    display: block;
+    margin: 40px auto 20px;
+    width: 184px;
+    height: 164px;
 }
 .goodness__item.m-4 {
     margin-left: 12%;
 }
 .goodness__item.m-5 {
     margin-left: 12%;
-}
-.goodness__item:nth-child(1) {
-    background-image: url(../images/icon-goodness-1.png);
-}
-.goodness__item:nth-child(2) {
-    background-image: url(../images/icon-goodness-2.png);
-}
-.goodness__item:nth-child(3) {
-    background-image: url(../images/icon-goodness-3.png);
-}
-.goodness__item:nth-child(4) {
-    background-image: url(../images/icon-goodness-4.png);
-}
-.goodness__item:nth-child(5) {
-    background-image: url(../images/icon-goodness-5.png);
 }
 .goodness__tag {
     font-size: 18px;
@@ -147,11 +132,13 @@
   overflow: hidden;
 } 
 .parallax {
+    display: block;
   position: relative;
   margin-top: -600px;
-  background: url(../images/bg-cooperate.png) center center no-repeat;
-  background-size: cover;
+  width: 100%;
   height: 900px;
+  /*background: url(../images/bg-cooperate.png) center center no-repeat;*/
+  /*background-size: cover;*/
   }
 .cooperate {
     position: absolute;
