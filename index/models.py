@@ -17,5 +17,5 @@ class MerchantApply(models.Model):
         return self.name
     class Meta:
         ordering = ('-date',)
-        verbose_name_plural = u"短信群发记录"
-        verbose_name = u"短信群发记录"
+        verbose_name_plural = u"商家报名"
+        verbose_name = u"商家报名"
