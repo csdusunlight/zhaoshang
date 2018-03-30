@@ -41,7 +41,7 @@ class IndexView(View):
         if wangwang:
             content += '<p>联系人旺旺：%s</p>' % wangwang
         try:
-            send_email('690501772@qq.com', '商家报名', content)
+            send_email('5815397@qq.com', '商家报名', content)
         except:
             pass
         return JsonResponse(res)
