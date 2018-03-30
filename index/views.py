@@ -9,30 +9,42 @@ from email.mime.text import MIMEText
 import smtplib
 from django.views.generic.base import View
 from django.shortcuts import render
+from .models import MerchantApply
 class IndexView(View):
     def get(self, request):
         template = 'index.html'
         return render(request, template)
     def post(self, request): 
+        res = {'code':0}
         url = request.POST.get('url', '')
         name = request.POST.get('name', '')
         tel = request.POST.get('tel', '')
         qq = request.POST.get('qq', '')
         wangwang = request.POST.get('wangwang', '')
         content = ''
+        try:
+            MerchantApply.objects.create(url=url, name=name, tel=tel, qq=qq, ww=wangwang)
+        except Exception as e:
+            res['code'] = 1
+            res['msg'] = str(e)
+            return JsonResponse(res)
+            
+        url = url.replace('https','http')
         if url:
-            content += '商家店铺链接：' + 'http://wafuli.cn/' + '\n'
+            content += '<p><a href="%s">商家店铺链接</a><p/>' % url
         if name:
-            content += '联系人姓名：' + name + '\n'
+            content += '<p>联系人姓名：%s</p>' % name
         if tel:
-            content += '联系人电话：' + tel + '\n'
+            content += '<p>联系人电话：%s</p>' % tel
         if qq:
-            content += '联系人QQ：' + qq + '\n'
+            content += '<p>联系人QQ：%s</p>' % qq
         if wangwang:
-            content += '联系人旺旺：' + wangwang + '\n'
-        print (content)
-        code = send_email('249558317@qq.com', '会议纪要', content)
-        return JsonResponse({'code':code})
+            content += '<p>联系人旺旺：%s</p>' % wangwang
+        try:
+            send_email('690501772@qq.com', '商家报名', content)
+        except:
+            pass
+        return JsonResponse(res)
     
 
 
