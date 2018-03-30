@@ -4,7 +4,7 @@ jQuery(document).ready(function($){
     })
     
     Echo.init({     //图片延迟加载
-        offset: 0,
+        offset: 500,
         throttle: 0
     });
     
