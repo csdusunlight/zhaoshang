@@ -21,7 +21,7 @@ class IndexView(View):
         wangwang = request.POST.get('wangwang', '')
         content = ''
         if url:
-            content += '商家店铺链接：' + 'https://wafuli.cn/' + '\n'
+            content += '商家店铺链接：' + 'http://wafuli.cn/' + '\n'
         if name:
             content += '联系人姓名：' + name + '\n'
         if tel:
@@ -31,7 +31,7 @@ class IndexView(View):
         if wangwang:
             content += '联系人旺旺：' + wangwang + '\n'
         print (content)
-        code = send_email('690501772@qq.com', '会议纪要', content)
+        code = send_email('249558317@qq.com', '会议纪要', content)
         return JsonResponse({'code':code})
     
 
