@@ -35,6 +35,9 @@
                             <a href="#example">成功案例</a>
                         </li>
                         <li class="nav__item">
+                            <a href="#apply">商家报名</a>
+                        </li>
+                        <li class="nav__item">
                             <a href="#question">常见问题</a>
                         </li>
                     </ul>
@@ -177,7 +180,7 @@
                 </ul>
             </div>
             <div class="bgc">
-                <div class="apply wrapper">
+                <div id="apply" class="apply wrapper">
                     <h2 class="common__title">商家报名</h2>
                     <p class="common__title-tips">留下您店铺的基本消息，我们将第一时间为您服务</p>
                     <div class="apply__box">
@@ -240,13 +243,23 @@
         <script src="https://cdn.bootcss.com/flexslider/2.7.0/jquery.flexslider.min.js"></script>
         <!--<script src="{% static 'js/wow.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
         <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
-        <script src="{% static 'js/jquery.parallax.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script src="{% static 'js/typer.min.js' %}" type="text/javascript" charset="utf-8"></script>
+        <!--<script src="{% static 'js/jquery.parallax.js' %}" type="text/javascript" charset="utf-8"></script>-->
+        <!--<script src="https://cdn.bootcss.com/parallax/2.1.3/jquery.parallax.min.js"></script>-->
+        <!--<script src="{% static 'js/typer.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
         <!--<script src="{% static 'js/echo.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
         <script src="https://cdn.bootcss.com/echo.js/1.5.0/echo.min.js"></script>
         <!--<script src="{% static 'js/jquery.validator.min.js' %}?local=zh-CN"></script>-->
         <script src="https://cdn.bootcss.com/nice-validator/1.1.3/jquery.validator.min.js?local=zh-CN"></script>
         <script>
+            // typer.js
+            function typer(c){function f(a,b){""==c.className&&(c.className="typer");for(var d=0;d<a.length;d++)setTimeout(function(a){c.innerText+=a},b*d,a.charAt(d))}function e(a){""==c.className&&(c.className="typer");for(var b=0;b<a;b++)setTimeout(function(){var a=c.innerText,a=a.substr(0,a.length-1);c.innerText=a},50*b)}function h(){c.className=""}var b=0,a=[];c=document.getElementById(c);var d=0;this.type=function(g,c){var e=Array.prototype.slice.call(arguments);a.push(["type"].concat(e).concat(b));"string"==
+            typeof g?(textLength=g.length,c=c?c:120,setTimeout(f,b,g,c),b+=textLength*c,d+=textLength):"number"==typeof g&&(b+=g);return this};this.del=function(c){if(void 0===c)setTimeout(e,b,d),a.push(["del"].concat(b)),b+=50*d+500,d=0;else{var f=Array.prototype.slice.call(arguments);a.push(["del"].concat(f).concat(b));setTimeout(e,b,c);b+=50*c+500;d-=c}return this};this.end=function(){a.push(["end"].concat(b));setTimeout(h,b);return this};this.printDuration=function(){console.log(b)};this.repeat=function(){setInterval(function(){for(i=
+            0;i<a.length;i++)"type"==a[i][0]?void 0!==a[i][3]?(setTimeout(f,a[i][3],a[i][1],a[i][2]),d+=a[i][1].length):"number"!=typeof a[i][1]&&(setTimeout(f,a[i][2],a[i][1],120),d+=a[i][1].length):"del"==a[i][0]?void 0===a[i][2]?(setTimeout(e,a[i][1],d),d=0):(setTimeout(e,a[i][2],a[i][1]),d-=a[i][1]):setTimeout(h,a[i][1])},b);b=0};(function(){var a=document.createElement("style");document.head.appendChild(a);sheet=a.sheet;sheet.insertRule('.typer::after { content: "|";animation: blink 500ms infinite; }',0);
+            sheet.insertRule("@keyframes blink {from { opacity: 0; } to { opacity: 1; }}",0);c.className="typer"})()};
+            // parallax.js
+            (function($){$.fn.parallax=function(options){var parallax_element=this;var settings={speed:'100',ascending:true,delay:'1000'};if(options){$.extend(settings,options);}var ad="+";if(!settings['ascending']==true){var ad="-";}$(window).scroll(function(){var wScroll=$(this).scrollTop();parallax_element.css({"transform":"translate(0px, "+ad+wScroll/settings['speed']+"%)","transition-duration":settings['delay']+"ms"});});}}(jQuery));$(document).ready(function(){$(".parallax").parallax({speed:180,ascending:true,delay:800});$(".parallax-0").parallax({speed:60});$(".parallax-1").parallax({speed:200});$(".parallax-2").parallax({speed:90,ascending:true,delay:300});$(".parallax-3").parallax({speed:90,ascending:true,delay:2000});$(".parallax-4").parallax({speed:90,ascending:true,delay:1000});$(".parallax-5").parallax({speed:90,ascending:false,delay:1000});});
+            
+            // ***************
             jQuery(document).ready(function($){
                 $('.nav__item').click(function () {     // 导航
                     $(this).addClass('on').siblings().removeClass('on');
