@@ -10,13 +10,13 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'css/flexslider.css' %}" />
-        <script data-src="{% static 'js/jquery-1.11.2.min.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script data-src="{% static 'js/jquery.flexslider-min.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script data-src="{% static 'js/wow.min.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script data-src="{% static 'js/jquery.parallax.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script data-src="{% static 'js/typer.min.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script data-src="{% static 'js/jquery.validator.min.js' %}?local=zh-CN"></script>
-        <!--<script defer="defer" data-src="{% static 'js/echo.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
+        <script src="{% static 'js/jquery-1.11.2.min.js' %}" type="text/javascript" charset="utf-8"></script>
+        <script src="{% static 'js/jquery.flexslider-min.js' %}" type="text/javascript" charset="utf-8"></script>
+        <script src="{% static 'js/wow.min.js' %}" type="text/javascript" charset="utf-8"></script>
+        <script src="{% static 'js/jquery.parallax.js' %}" type="text/javascript" charset="utf-8"></script>
+        <script src="{% static 'js/typer.min.js' %}" type="text/javascript" charset="utf-8"></script>
+        <script src="{% static 'js/jquery.validator.min.js' %}?local=zh-CN"></script>
+        <!--<script defer="defer" src="{% static 'js/echo.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
         <title>招商门户</title>
     </head>
 
@@ -25,7 +25,7 @@
             <div class="header">
                 <div class="wrapper">
                     <div class="logo-box l">
-                        <img class="logo" data-src="{% static 'images/logo.png' %}" alt="logo" />
+                        <img class="logo" src="{% static 'images/logo.png' %}" alt="logo" />
                     </div>
                     <ul class="nav r">
                         <li class="nav__item on">
@@ -240,8 +240,8 @@
         </div>
         
         
-        <script>
-            jQuery(document).ready(function($){
+        <script type="text/javascript">
+            $(function(){
                 $('.nav__item').click(function () {     // 导航
                     $(this).addClass('on').siblings().removeClass('on');
                 })
@@ -273,10 +273,10 @@
                 
                 // 动态打字效果
                 var inputing = new typer('inputing');
-                inputing.end().type(200).type('这是个啥子网站？').end().type(2000).del()
-                inputing.type('这是个very神奇的页面，').del(3).type(300).type('网站。').end().type(2500)
-                inputing.del().type('哪里神奇了？').end().type(2570)
-                inputing.del().type('我说神奇就神奇！！！').end().type(1830).del().repeat()
+                inputing.end().type(200).type('打爆款冲销量').end().type(2000).del()
+//              inputing.type('这是个very神奇的页面，').del(3).type(300).type('网站。').end().type(2500)
+//              inputing.del().type('哪里神奇了？').end().type(2570)
+                inputing.del().type('数万商家首选').end().type(1830).del().repeat()
                 
                 var wow = new WOW({     // 添加动效
                     boxClass:     'wow',
