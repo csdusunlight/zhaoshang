@@ -6,14 +6,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="/favicon.ico" rel="shortcut icon"/>
         <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
         <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}"/>
         <link rel="stylesheet" type="text/css" href="{% static 'css/flexslider.css' %}" />
-        <link href="/favicon.ico" rel="shortcut icon"/>
-        <script src="{% static 'js/jquery-1.11.2.min.js' %}" type="text/javascript" charset="utf-8"></script>
-        <!--<script defer="defer" src="{% static 'js/echo.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
-        <title>招商门户</title>
+        <!--<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}"/>-->
+        <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+        <!--<link rel="stylesheet" type="text/css" href="{% static 'css/flexslider.css' %}" />-->
+        <link href="https://cdn.bootcss.com/flexslider/2.7.0/flexslider.min.css" rel="stylesheet">
+        <!--<script src="{% static 'js/jquery-1.11.2.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+        <title>发券/一站式淘客推广</title>
     </head>
 
     <body>
@@ -32,6 +36,9 @@
                         </li>
                         <li class="nav__item">
                             <a href="#example">成功案例</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#apply">商家报名</a>
                         </li>
                         <li class="nav__item">
                             <a href="#question">常见问题</a>
@@ -72,19 +79,19 @@
                     <h2 class="common__title">我们能提供什么？</h2>
                     <ul class="support__item-box wow fadeInUp fs-0">
                         <li class="support__item">
-                            <img class="support__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/icon-support-1.png' %}"/>
+                            <img class="support__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/icon-support-1.png' %}"/>
                             <p class="support__item-txt">单品快速打爆</p>
                         </li>
                         <li class="support__item">
-                            <img class="support__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/icon-support-2.png' %}"/>
+                            <img class="support__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/icon-support-2.png' %}"/>
                             <p class="support__item-txt">新品基础销量注入</p>
                         </li>
                         <li class="support__item">
-                            <img class="support__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/icon-support-3.png' %}"/>
+                            <img class="support__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/icon-support-3.png' %}"/>
                             <p class="support__item-txt">全店多品动销、补量</p>
                         </li>
                         <li class="support__item">
-                            <img class="support__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/icon-support-4.png' %}"/>
+                            <img class="support__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/icon-support-4.png' %}"/>
                             <p class="support__item-txt">聚/抢等官方活动助攻</p>
                         </li>
                     </ul>
@@ -94,27 +101,27 @@
                 <h2 class="common__title">我们有哪些优势</h2>
                 <ul class="fs-0">
                     <li class="goodness__item wow fadeInUp">
-                        <img class="goodness__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/icon-goodness-1.png' %}"/>
+                        <img class="goodness__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/icon-goodness-1.png' %}"/>
                         <p class="goodness__tag">自有渠道，一手流量（告别黄牛淘客）</p>
                         <p class="goodness__txt">300个电商导购APP、100家站外内容自媒体、80个淘宝达人大V、3000个导购门户网站</p>
                     </li>
                     <li class="goodness__item wow fadeInUp">
-                        <img class="goodness__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/icon-goodness-2.png' %}"/>
+                        <img class="goodness__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/icon-goodness-2.png' %}"/>
                         <p class="goodness__tag">精准优质买家（人群标签不再被打乱）</p>
                         <p class="goodness__txt">内容沉淀培育千万高端买家，消费能力、淘气值、高于传统渠道40%</p>
                     </li>
                     <li class="goodness__item wow fadeInUp">
-                        <img class="goodness__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/icon-goodness-3.png' %}"/>
+                        <img class="goodness__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/icon-goodness-3.png' %}"/>
                         <p class="goodness__tag">一对一专属服务（新手也不用担心）</p>
                         <p class="goodness__txt">百人规模CPS团队，专业客服1V1服务。QQ、旺旺、微信、远程协助多方式沟通，让你没有任何烦劳</p>
                     </li>
                     <li class="goodness__item wow fadeInUp m-4">
-                        <img class="goodness__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/icon-goodness-4.png' %}"/>
+                        <img class="goodness__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/icon-goodness-4.png' %}"/>
                         <p class="goodness__tag">大店战略合作服务商</p>
                         <p class="goodness__txt">已与100多家天猫类目top商家签订推广外包服务费合同</p>
                     </li>
                     <li class="goodness__item wow fadeInUp m-5">
-                        <img class="goodness__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/icon-goodness-5.png' %}"/>
+                        <img class="goodness__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/icon-goodness-5.png' %}"/>
                         <p class="goodness__tag">使命必达（高完成率）</p>
                         <p class="goodness__txt">目标销量达成率高达90%，节省时间成本</p>
                     </li>
@@ -122,14 +129,14 @@
             </div>
             <div id="cooperate" class="cooperate__container bgc">
                 <div class="parallax-wrapper">
-                    <img class="parallax" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/bg-cooperate.png' %}"/>
+                    <img class="parallax" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/bg-cooperate.png' %}"/>
                     <!--<div class="parallax">
                     </div>-->
                 </div>
                 <div class="cooperate wrapper">
                     <h2 class="common__title">合作流程</h2>
                     <div class="cooperate__item-box wow lightSpeedIn">
-                        <img data-src="{% static 'images/blank.gif' %}" src="{% static 'images/bg-cooperate-icons.png' %}"/>
+                        <img src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/bg-cooperate-icons.png' %}"/>
                     </div>
                 </div>
             </div>
@@ -138,45 +145,45 @@
                 <div class="flexslider flexslider2">
                     <ul class="slides">
                         <li>
-                            <img class="slide__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-1.png' %}" />
+                            <img class="slide__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-1.png' %}" />
                         </li>
                         <li>
-                            <img class="slide__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-2.png' %}" />
+                            <img class="slide__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-2.png' %}" />
                         </li>
                         <li>
-                            <img class="slide__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-3.png' %}" />
+                            <img class="slide__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-3.png' %}" />
                         </li>
                         <li>
-                            <img class="slide__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-4.png' %}" />
+                            <img class="slide__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-4.png' %}" />
                         </li>
                         <li>
-                            <img class="slide__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-5.png' %}" />
+                            <img class="slide__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-5.png' %}" />
                         </li>
                         <li>
-                            <img class="slide__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-6.png' %}" />
+                            <img class="slide__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-6.png' %}" />
                         </li>
                         <li>
-                            <img class="slide__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-7.png' %}" />
+                            <img class="slide__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-7.png' %}" />
                         </li>
                         <li>
-                            <img class="slide__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-8.png' %}" />
+                            <img class="slide__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-8.png' %}" />
                         </li>
                         <li>
-                            <img class="slide__img" data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-9.png' %}" />
+                            <img class="slide__img" src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-9.png' %}" />
                         </li>
                     </ul>
                 </div>
                 <ul class="example__img wow fadeInUp">
-                    <li class="example__img-item"><img data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-img-1.png' %}" /></li>
-                    <li class="example__img-item"><img data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-img-2.png' %}" /></li>
-                    <li class="example__img-item"><img data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-img-3.png' %}" /></li>
-                    <li class="example__img-item"><img data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-img-4.png' %}" /></li>
-                    <li class="example__img-item"><img data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-img-5.png' %}" /></li>
-                    <li class="example__img-item"><img data-src="{% static 'images/blank.gif' %}" src="{% static 'images/example-img-6.png' %}" /></li>
+                    <li class="example__img-item"><img src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-img-1.png' %}" /></li>
+                    <li class="example__img-item"><img src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-img-2.png' %}" /></li>
+                    <li class="example__img-item"><img src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-img-3.png' %}" /></li>
+                    <li class="example__img-item"><img src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-img-4.png' %}" /></li>
+                    <li class="example__img-item"><img src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-img-5.png' %}" /></li>
+                    <li class="example__img-item"><img src="{% static 'images/blank.gif' %}" data-echo="{% static 'images/example-img-6.png' %}" /></li>
                 </ul>
             </div>
             <div class="bgc">
-                <div class="apply wrapper">
+                <div id="apply" class="apply wrapper">
                     <h2 class="common__title">商家报名</h2>
                     <p class="common__title-tips">留下您店铺的基本消息，我们将第一时间为您服务</p>
                     <div class="apply__box">
@@ -235,21 +242,35 @@
             </div>
         </div>
         
-        <script src="{% static 'js/jquery.flexslider-min.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script src="{% static 'js/wow.min.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script src="{% static 'js/jquery.parallax.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script src="{% static 'js/typer.min.js' %}" type="text/javascript" charset="utf-8"></script>
-        <script src="{% static 'js/jquery.validator.min.js' %}?local=zh-CN"></script>
-        <script type="text/javascript">
-            $(document).ready(function(){
+        <!--<script src="{% static 'js/jquery.flexslider-min.js' %}" type="text/javascript" charset="utf-8"></script>-->
+        <script src="https://cdn.bootcss.com/flexslider/2.7.0/jquery.flexslider.min.js"></script>
+        <!--<script src="{% static 'js/wow.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
+        <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
+        <!--<script src="{% static 'js/jquery.parallax.js' %}" type="text/javascript" charset="utf-8"></script>-->
+        <!--<script src="https://cdn.bootcss.com/parallax/2.1.3/jquery.parallax.min.js"></script>-->
+        <!--<script src="{% static 'js/typer.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
+        <!--<script src="{% static 'js/echo.min.js' %}" type="text/javascript" charset="utf-8"></script>-->
+        <script src="https://cdn.bootcss.com/echo.js/1.5.0/echo.min.js"></script>
+        <!--<script src="{% static 'js/jquery.validator.min.js' %}?local=zh-CN"></script>-->
+        <script src="https://cdn.bootcss.com/nice-validator/1.1.3/jquery.validator.min.js?local=zh-CN"></script>
+        <script>
+            // typer.js
+            function typer(c){function f(a,b){""==c.className&&(c.className="typer");for(var d=0;d<a.length;d++)setTimeout(function(a){c.innerText+=a},b*d,a.charAt(d))}function e(a){""==c.className&&(c.className="typer");for(var b=0;b<a;b++)setTimeout(function(){var a=c.innerText,a=a.substr(0,a.length-1);c.innerText=a},50*b)}function h(){c.className=""}var b=0,a=[];c=document.getElementById(c);var d=0;this.type=function(g,c){var e=Array.prototype.slice.call(arguments);a.push(["type"].concat(e).concat(b));"string"==
+            typeof g?(textLength=g.length,c=c?c:120,setTimeout(f,b,g,c),b+=textLength*c,d+=textLength):"number"==typeof g&&(b+=g);return this};this.del=function(c){if(void 0===c)setTimeout(e,b,d),a.push(["del"].concat(b)),b+=50*d+500,d=0;else{var f=Array.prototype.slice.call(arguments);a.push(["del"].concat(f).concat(b));setTimeout(e,b,c);b+=50*c+500;d-=c}return this};this.end=function(){a.push(["end"].concat(b));setTimeout(h,b);return this};this.printDuration=function(){console.log(b)};this.repeat=function(){setInterval(function(){for(i=
+            0;i<a.length;i++)"type"==a[i][0]?void 0!==a[i][3]?(setTimeout(f,a[i][3],a[i][1],a[i][2]),d+=a[i][1].length):"number"!=typeof a[i][1]&&(setTimeout(f,a[i][2],a[i][1],120),d+=a[i][1].length):"del"==a[i][0]?void 0===a[i][2]?(setTimeout(e,a[i][1],d),d=0):(setTimeout(e,a[i][2],a[i][1]),d-=a[i][1]):setTimeout(h,a[i][1])},b);b=0};(function(){var a=document.createElement("style");document.head.appendChild(a);sheet=a.sheet;sheet.insertRule('.typer::after { content: "|";animation: blink 500ms infinite; }',0);
+            sheet.insertRule("@keyframes blink {from { opacity: 0; } to { opacity: 1; }}",0);c.className="typer"})()};
+            // parallax.js
+            (function($){$.fn.parallax=function(options){var parallax_element=this;var settings={speed:'100',ascending:true,delay:'1000'};if(options){$.extend(settings,options);}var ad="+";if(!settings['ascending']==true){var ad="-";}$(window).scroll(function(){var wScroll=$(this).scrollTop();parallax_element.css({"transform":"translate(0px, "+ad+wScroll/settings['speed']+"%)","transition-duration":settings['delay']+"ms"});});}}(jQuery));$(document).ready(function(){$(".parallax").parallax({speed:180,ascending:true,delay:800});$(".parallax-0").parallax({speed:60});$(".parallax-1").parallax({speed:200});$(".parallax-2").parallax({speed:90,ascending:true,delay:300});$(".parallax-3").parallax({speed:90,ascending:true,delay:2000});$(".parallax-4").parallax({speed:90,ascending:true,delay:1000});$(".parallax-5").parallax({speed:90,ascending:false,delay:1000});});
+            
+            // ***************
+            jQuery(document).ready(function($){
                 $('.nav__item').click(function () {     // 导航
                     $(this).addClass('on').siblings().removeClass('on');
                 })
-                
-//              Echo.init({     //图片延迟加载
-//                  offset: 500,
-//                  throttle: 0
-//              });
+                Echo.init({     //图片延迟加载
+                    offset: 500,
+                    throttle: 0
+                });
                 
                 $('.flexslider1').flexslider({      // 轮播
                     animation: "fade",
