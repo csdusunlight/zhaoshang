@@ -46,7 +46,7 @@ class IndexView(View):
         try:
             from_email = settings.DEFAULT_FROM_EMAIL
             # subject 主题 content 内容 to_addr 是一个列表，发送给哪些人
-            msg = EmailMultiAlternatives('商家报名', content, from_email, ['690501772@qq.com'])
+            msg = EmailMultiAlternatives('商家报名', content, from_email, ['5815397@qq.com'])
              
             msg.content_subtype = "html"
              
