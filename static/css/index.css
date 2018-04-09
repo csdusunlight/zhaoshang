@@ -26,6 +26,10 @@
     font-size: 14px;
     color: #fff;
 }
+.nav__item-txt {
+    display: block;
+    line-height: 60px;
+}
 .nav__item.on {
     color: #e53f43;
 }
