@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from index import views
+from django.conf.urls import url
 
 urlpatterns = [
     path('', views.IndexView.as_view()),
     path('admin/', admin.site.urls),
+    url('^product/$', views.product, name='product'),
+    url('^aboutus/$', views.aboutus, name='aboutus'),
+    url('^cooperate/$', views.cooperate, name='cooperate'),
 ]

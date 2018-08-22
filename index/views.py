@@ -82,3 +82,14 @@ class IndexView(View):
 #         print (e)
 #         return 1
 
+def product(request):
+    template = 'product.html'
+    return render(request, template)
+
+def aboutus(request):
+    template = 'aboutus.html'
+    return render(request, template)
+
+def cooperate(request):
+    template = 'cooperate.html'
+    return render(request, template)
