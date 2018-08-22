@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Document</title>
-</head>
-<body>
-	<div>
-		test
-	</div>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>商务合作</title>
+    <link rel="stylesheet" href="/static/css/default.css" />
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ITAM9R5oX3XIDQ18fEftUXoNkFRnegAp"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var map = new BMap.Map("container");
+        var point = new BMap.Point(112.897917,28.219825);
+        map.centerAndZoom(point, 15);    
+        window.setTimeout(function(){  
+            map.panTo(new BMap.Point(112.897917,28.219825));    
+        }, 2000);
+        map.enableScrollWheelZoom(true);
+        var marker = new BMap.Marker(point);        // 创建标注    
+        map.addOverlay(marker); 
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header buco">
+      <div class="logo">
+        <img src="/static/images/FLTXBL.png"/>
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="item">首页</li>
+          <li class="item">产品与服务</li>
+          <li class="item" style="display: none;">案列中心</li>
+          <li class="item">关于我们</li>
+          <li class="item item_active">商务合作</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content_bj">
+      <p class="content_text_zh">诚邀五洲来客    共筑精诚合作</p>
+      <p class="content_text_en">contact  us</p>
+    </div>
+    <div class="location_map">
+      <div class="map">
+        <div id="container"></div>
+      </div>
+      <div class="info_add">
+        <p class="info_list">联系人：贾杏</p>
+        <p class="info_list">手机号：15307315302</p>
+        <p class="info_list">座机：0731-85586375</p>
+        <p class="info_list">邮箱：2469101796@qq.com</p>
+        <div class="info_weixin">
+          <img src="/static/images/kfwx.png"/>
+          <p>微信扫一扫</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer_page">
+      <div class="footer_content">
+        <div class="footer_item">
+          <div class="footer_list">
+            <h4 class="mintitle">首页</h4>
+            <ul class="home_ul">
+              <li class="home_list">核心优势</li>
+              <li class="home_list">核心服务</li>
+              <li class="home_list">合作伙伴</li>
+            </ul>
+          </div>
+          <div class="footer_list">
+            <h4 class="mintitle">关于我们</h4>
+            <ul class="home_ul">
+              <li class="home_list">发展历程</li>
+              <li class="home_list">企业文化</li>
+              <li class="home_list">公司动态</li>
+              <li class="home_list">加入我们</li>
+            </ul>
+          </div>
+          <div class="footer_list">
+            <h4 class="mintitle">产品与服务</h4>
+            <ul class="home_ul">
+              <li class="home_list">垂直类广告投放</li>
+              <li class="home_list">效果优化</li>
+              <li class="home_list">理财超市</li>
+            </ul>
+          </div>
+          <div class="footer_list" style="display: none;">
+            <h4 class="mintitle">案列中心</h4>
+            <ul class="home_ul">
+              <li class="home_list">媒体合作案列</li>
+              <li class="home_list">效果优化案列</li>
+            </ul>
+          </div>
+          <div class="weixin">
+            <div class="weixinimg">
+              <img src="/static/images/kfwx.png"/>
+            </div>
+            <p class="weixintitle">福利联盟官微</p>
+          </div>
+        </div>
+        <p class="explain">Copyright © 2016-2026 福利天下 版权所有 备案号：湘ICP备18007376号-4<span>联系电话：0731-85586375</span></p>
+      </div>
+    </div>
+  </body>
 </html>

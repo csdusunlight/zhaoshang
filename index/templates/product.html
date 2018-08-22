@@ -1,14 +1,195 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Document</title>
-</head>
-<body>
-	<div>
-		test
-	</div>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>产品与服务</title>
+    <link rel="stylesheet" href="/static/css/default.css" />
+    <link rel="stylesheet" href="/static/css/product.css" />
+    <script src="/static/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('.provide_text_items').eq(0).show();
+        $('.provide_list ul li').click(function () {
+          var _index  = $(this).index();
+          $('.provide_text_items').eq(_index).show().siblings().hide();
+          $('.provide_img').find('.img_seal').removeClass('.img_sealon');
+          $('.provide_img').find('.img_seal').removeClass('.img_sealooff');
+          $('.provide_img').find('.img_shadow').removeClass('.img_shadowon');
+          $('.provide_img').find('.img_shadow').removeClass('.img_shadowoff');
+          $(this).addClass("active").siblings().removeClass("active");
+        })
+        $('.provide_img_left').hover(function () {
+          $(this).find('.img_seal').addClass('img_sealon');
+          $(this).find('.img_shadow').addClass('img_shadowon');
+          $(this).find('.img_seal').removeClass('img_sealooff');
+          $(this).find('.img_shadow').removeClass('img_shadowoff');
+        }, function () {
+          $_this = $(this);
+          $(this).find('.img_seal').removeClass('img_sealon');
+          $(this).find('.img_shadow').removeClass('img_shadowon');
+          $(this).find('.img_seal').addClass('img_sealooff');
+          $(this).find('.img_shadow').addClass('img_shadowoff');
+          var timera = setTimeout(function () {
+            $_this.find('.img_seal').removeClass('img_sealooff');
+            $_this.find('.img_shadow').removeClass('img_shadowoff');
+          }, 1000)
+        })
+        $('.provide_img_center').hover(function () {
+          $(this).find('.img_seal').addClass('img_sealon');
+          $(this).find('.img_shadow').addClass('img_shadowon');
+          $(this).find('.img_seal').removeClass('img_sealooff');
+          $(this).find('.img_shadow').removeClass('img_shadowoff');
+        }, function () {
+          $_this = $(this);
+          $(this).find('.img_seal').removeClass('img_sealon');
+          $(this).find('.img_shadow').removeClass('img_shadowon');
+          $(this).find('.img_seal').addClass('img_sealooff');
+          $(this).find('.img_shadow').addClass('img_shadowoff');
+          var timerb = setTimeout(function () {
+            $_this.find('.img_seal').removeClass('img_sealooff');
+            $_this.find('.img_shadow').removeClass('img_shadowoff');
+          }, 1000)
+        })
+        $('.provide_img_right').hover(function () {
+          $(this).find('.img_seal').addClass('img_sealon');
+          $(this).find('.img_shadow').addClass('img_shadowon');
+          $(this).find('.img_seal').removeClass('img_sealooff');
+          $(this).find('.img_shadow').removeClass('img_shadowoff');
+        }, function () {
+          $_this = $(this);
+          $(this).find('.img_seal').removeClass('img_sealon');
+          $(this).find('.img_shadow').removeClass('img_shadowon');
+          $(this).find('.img_seal').addClass('img_sealooff');
+          $(this).find('.img_shadow').addClass('img_shadowoff');
+           var timerc = setTimeout(function () {
+            $_this.find('.img_seal').removeClass('img_sealooff');
+            $_this.find('.img_shadow').removeClass('img_shadowoff');
+          }, 1000)
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <div class="header buco">
+      <div class="logo">
+        <img src="/static/images/FLTXBL.png"/>
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="item">首页</li>
+          <li class="item item_active">产品与服务</li>
+          <li class="item" style="display: none;">案列中心</li>
+          <li class="item">关于我们</li>
+          <li class="item">商务合作</li>
+        </ul>
+      </div>
+    </div>
+    <div class="service_new">
+      <h1 class="service_title">我们的服务对象</h1>
+      <div class="img_list img_left">
+        <img src="/static/images/1.png"/>
+        <p class="img_text">金融</p>
+      </div>
+      <div class="img_list img_center">
+        <img src="/static/images/2.png"/>
+        <p class="img_text">电商</p>
+      </div>
+      <div class="img_list img_center">
+        <img src="/static/images/3.png"/>
+        <p class="img_text">游戏</p>
+      </div>
+      <div class="img_list img_right">
+        <img src="/static/images/4.png"/>
+        <p class="img_text">其它</p>
+      </div>
+    </div>
+    <div class="provide_service">
+      <h1 class="service_title">我们提供的服务</h1>
+      <div class="provide_list">
+        <ul>
+          <li class="li_left active">效果</li>
+          <li class="li_center">品牌</li>
+          <li class="li_right">优化</li>
+        </ul>
+      </div>
+      <div class="provide_textes">
+        <div class="provide_text_items">
+          <div class="provide_text">
+            <div class="text"><span>社群推广</span><i>拥有QQ、微信群的社群领袖</i></div>
+            <div class="text"><span>线下推广</span><i>线下推荐理财投资的理财师</i></div>
+          </div>
+          <div class="provide_img provide_img_left">
+            <img src="/static/images/effect.png" class="img_seal"/>
+            <img src="/static/images/shadow.png" class="img_shadow"/>
+          </div>
+        </div>
+        <div class="provide_text_items">
+          <div class="provide_text">
+            <div class="text"><span>线下</span><i>楼宇电梯、地铁、公交、报纸</i></div>
+            <div class="text"><span>线上</span><i>视频中插、影视植入、电影映前</i></div>
+          </div>
+          <div class="provide_img provide_img_center">
+            <img src="/static/images/brand.png" class="img_seal"/>
+            <img src="/static/images/shadow.png" class="img_shadow"/>
+          </div>
+        </div>
+        <div class="provide_text_items">
+          <div class="provide_text provide_top">
+            <div class="text"><span>SEO</span><i>网站、核心关键词、口碑、点击量</i></div>
+            <div class="text"><span>SEM</span><i>竞价搜索、信息流、微信公众号</i></div>
+            <div class="text"><span>ASO</span><i>刷量、评论、关键词排名</i></div>
+          </div>
+          <div class="provide_img provide_img_right">
+            <img src="/static/images/optimization.png" class="img_seal"/>
+            <img src="/static/images/shadow.png" class="img_shadow"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_page">
+      <div class="footer_content">
+        <div class="footer_item">
+          <div class="footer_list">
+            <h4 class="mintitle">首页</h4>
+            <ul class="home_ul">
+              <li class="home_list">核心优势</li>
+              <li class="home_list">核心服务</li>
+              <li class="home_list">合作伙伴</li>
+            </ul>
+          </div>
+          <div class="footer_list">
+            <h4 class="mintitle">关于我们</h4>
+            <ul class="home_ul">
+              <li class="home_list">发展历程</li>
+              <li class="home_list">企业文化</li>
+              <li class="home_list">公司动态</li>
+              <li class="home_list">加入我们</li>
+            </ul>
+          </div>
+          <div class="footer_list">
+            <h4 class="mintitle">产品与服务</h4>
+            <ul class="home_ul">
+              <li class="home_list">垂直类广告投放</li>
+              <li class="home_list">效果优化</li>
+              <li class="home_list">理财超市</li>
+            </ul>
+          </div>
+          <div class="footer_list" style="display: none;">
+            <h4 class="mintitle">案列中心</h4>
+            <ul class="home_ul">
+              <li class="home_list">媒体合作案列</li>
+              <li class="home_list">效果优化案列</li>
+            </ul>
+          </div>
+          <div class="weixin">
+            <div class="weixinimg">
+              <img src="/static/images/kfwx.png"/>
+            </div>
+            <p class="weixintitle">福利联盟官微</p>
+          </div>
+        </div>
+        <p class="explain">Copyright © 2016-2026 福利天下 版权所有 备案号：湘ICP备18007376号-4<span>联系电话：0731-85586375</span></p>
+      </div>
+    </div>
+  </body>
 </html>

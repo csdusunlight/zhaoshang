@@ -1,14 +1,222 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<title>Document</title>
-</head>
-<body>
-	<div>
-		test
-	</div>
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="/static/css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="/static/css/default.css" />
+    <link rel="stylesheet" href="/static/css/aboutus.css" />
+    <script src="/static/js/jquery-1.8.3.min.js"></script>
+    <script src="/static/js/jquery.fullPage.min.js"></script>
+    <script src="/static/js/jquery.zySlide.js"></script>
+    <script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#about_us').fullpage({
+          'navigation': true,
+          afterLoad: function(anchorLink, index){
+            if(index == 2){
+              $('.p2015').addClass('pleft_anima'),
+              setTimeout(function () {
+                $('.p2016').addClass('pright_anima');
+              }, 700)
+              setTimeout(function () {
+                $('.p2017').addClass('pleft_anima');
+              }, 1400)
+              setTimeout(function () {
+                $('.p2018').addClass('pright_anima');
+              }, 2100)
+            }
+            if(index == 3){
+              $('.culture_left').addClass('culture_leftanima');
+              $('.culture_right').addClass('culture_rightanima');
+            }
+            if(index == 4){
+              $('.zy-Slide').zySlide({ speed: 500 }).css('border', '0px solid blue');
+            }
+            if(index == 5){
+            }
+          },
+          onLeave: function(index, direction){}
+        });
+        $('.maxtitle').addClass('maxtitle_anima');
+        var t = setTimeout(function () {
+          $('.biaoyu').addClass('biaoyu_anima');
+          setTimeout(function () {
+            $('.identification').addClass('identification_anima');
+          }, 700)
+        }, 700)
+      })
+    </script>
+  </head>
+  <body>
+    <div id="about_us">
+      <div class="section section1">
+        <div class="initIal">
+          <div class="header">
+            <div class="logo">
+              <img src="/static/images/FLTX.png"/>
+            </div>
+            <div class="nav">
+              <ul>
+                <li class="item">首页</li>
+                <li class="item">产品与服务</li>
+                <li class="item" style="display: none;">案列中心</li>
+                <li class="item item_active">关于我们</li>
+                <li class="item">商务合作</li>
+              </ul>
+            </div>
+          </div>
+          <div class="text">
+            <h1 class="maxtitle">福利天下</h1>
+            <p class="biaoyu">2018，风雨同舟，再次启航</p>
+            <p class="identification">湖南福利天下成立于2015年，是一家线上+线下全方案解决的广告媒体公司，致力于为金融及全行业客户提供一站式效果营销服务。</p>
+          </div>
+        </div>
+      </div>
+      <div class="section section2">
+        <div class="initIal location initwidthmin">
+          <div class="straight_line"></div>
+          <h2 class="section2title">发展历程</h2>
+          <div class="course_list">
+            <h3 class="timers">
+              <span class="circular"></span>
+              <span class="line"></span>
+              <i class="year">2015</i>
+            </h3>
+            <div class="explain">
+              <div class="explain_left">
+                <p class="p2015">2015年5月10日福利天下网络科技有限公司注册成立</p>
+              </div>
+              <div class="explain_right"></div>
+            </div>
+          </div>
+          <div class="course_top course_martop">
+            <h3 class="timers">
+              <i class="year">2016</i>
+              <span class="circular"></span>
+              <span class="line"></span>
+            </h3>
+            <div class="explain">
+              <div class="explain_left">
+              </div>
+              <div class="explain_right">
+                <p class="p2016">2016年8月8日公司独立研发产品挖福利正式改版上线</p>
+                <p class="p2016">2016年11月12日公司自己研发的大数据存储与营销平台上线</p>
+              </div>
+            </div>
+          </div>
+          <div class="course_list course_martop">
+            <h3 class="timers">
+              <span class="circular"></span>
+              <span class="line"></span>
+              <i class="year">2017</i>
+            </h3>
+            <div class="explain">
+              <div class="explain_left">
+                <p class="p2017">2017年9月10日公司福利联盟上线</p>
+              </div>
+              <div class="explain_right"></div>
+            </div>
+          </div>
+          <div class="course_top course_martop">
+            <h3 class="timers">
+              <i class="year">2018</i>
+              <span class="circular"></span>
+              <span class="line"></span>
+            </h3>
+            <div class="explain">
+              <div class="explain_left">
+              </div>
+              <div class="explain_right">
+                <p class="p2018">2018年2月15日媒体矩阵和广告营销体系的搭建</p>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+      <div class="section section3">
+        <div class="interVal">
+          <h2 class="basicstitle">企业文化</h2>
+          <div class="culture">
+            <div class="culture_list culture_left"><img src="/static/images/conpy1.png"/></div>
+            <div class="culture_list culture_center"><img src="/static/images/conpy2.png"/></div>
+            <div class="culture_list culture_right"><img src="/static/images/conpy3.png"/></div>
+          </div>
+        </div>
+      </div>
+      <div class="section section4">
+        <div class="initmaxheight">
+          <div class="sec4_box">
+            <h2 class="basicstitle">公司动态</h2>
+            <div id="Slide1" class="zy-Slide">
+              <!--prev:元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。-->
+              <div class="click_left"></div>
+              <div class="click_right"></div>
+              <ul>
+                <!--alt + shift : 可以创建一个矩形选择区域-->
+                <li><img src="http://img.fuliworld.com/photo1.png" /></li>
+                <li><img src="http://img.fuliworld.com/photo2.png" /></li>
+                <li><img src="http://img.fuliworld.com/photo3.png" /></li>
+                <li><img src="http://img.fuliworld.com/photo4.png" /></li>
+                <li><img src="http://img.fuliworld.com/photo5.png" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section5">
+        <div class="service footer">
+          <h1 class="basicstitle">加入我们</h1>
+          <div class="addme">
+            <p><span>e-mail</span>admin@jyz100.com</p>
+            <p><span>address</span>长沙市岳麓区麓谷信息港AB栋</p>
+          </div>
+          <div class="footer_box">
+            <div class="footer_item">
+              <div class="footer_list">
+                <h4 class="mintitle">首页</h4>
+                <ul class="home_ul">
+                  <li class="home_list">核心优势</li>
+                  <li class="home_list">核心服务</li>
+                  <li class="home_list">合作伙伴</li>
+                </ul>
+              </div>
+              <div class="footer_list">
+                <h4 class="mintitle">关于我们</h4>
+                <ul class="home_ul">
+                  <li class="home_list">发展历程</li>
+                  <li class="home_list">企业文化</li>
+                  <li class="home_list">公司动态</li>
+                  <li class="home_list">加入我们</li>
+                </ul>
+              </div>
+              <div class="footer_list">
+                <h4 class="mintitle">产品与服务</h4>
+                <ul class="home_ul">
+                  <li class="home_list">垂直类广告投放</li>
+                  <li class="home_list">效果优化</li>
+                  <li class="home_list">理财超市</li>
+                </ul>
+              </div>
+              <div class="footer_list" style="display: none;">
+                <h4 class="mintitle">案列中心</h4>
+                <ul class="home_ul">
+                  <li class="home_list">媒体合作案列</li>
+                  <li class="home_list">效果优化案列</li>
+                </ul>
+              </div>
+              <div class="weixin">
+                <div class="weixinimg">
+                  <img src="/static/images/kfwx.png"/>
+                </div>
+                <p class="weixintitle">福利联盟官微</p>
+              </div>
+            </div>
+            <p class="explain">Copyright © 2016-2026 福利天下 版权所有 备案号：湘ICP备18007376号-4<span>联系电话：0731-85586375</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

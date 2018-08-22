@@ -1,0 +1,48 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  border: none;
+  font-size: 16px;
+  font-family: "Microsoft Yahei",sans-serif;
+  -webkit-tap-highlight-color:transparent;
+  -webkit-font-smoothing: antialiased;}
+  &:focus{
+      outline: none;}
+}
+body{
+  font-size: 16px;
+}
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+.header {width: 1240px; margin: 0 auto; height: 50px; padding-top: 30px; font-size: 15px;}
+.header .logo { float: left; width: 146px;}
+.header .nav{ float: right; width: 625px; text-align: center; }
+.header .nav ul li{width: 100px; margin: 0 27px; float: left; height: 50px; line-height: 50px; cursor: pointer;}
+.header .nav ul li.item_active{border-bottom: 2px solid #fff;}
+.buco .nav ul li.item_active{border-bottom: 2px solid #1991eb;}
+.fp-tableCell {position: relative;}
+.interVal {width: 1240px; height: 96%; margin: 0 auto; padding: 2% 0; text-align: center; overflow: hidden;}
+.initIal {width: 1240px; height: 100%; margin: 0 auto; text-align: center; overflow: hidden;}
+.initmaxheight{width: 100%; height: 96%; margin: 0 auto; padding: 2% 0; text-align: center; overflow: hidden;}
+.initwidthmin{padding: 1% 0;}
+.location {position: relative;}
+.footer {width: 1240px; height: 94%; margin: 0 auto; padding: 4% 0 2%; position: relative;}
+.footer_box {width: 100%; overflow: hidden; position: absolute; left: 0; bottom: 0; padding: 0 100px; box-sizing: border-box;}
+.footer_page{width: 100%; background: #343434; padding: 40px 0 60px 0; overflow: hidden; box-sizing: border-box;}
+.footer_content{width: 1240px; margin: 0 auto; color: #fff;  box-sizing: border-box;  padding: 0 100px; box-sizing: border-box;}
+.footer_item {width: 100%; overflow: hidden; margin-bottom: 4%;}
+.footer_list {width: 240px; float: left; text-align: left;}
+.footer_list h4{ font-weight: normal; font-size: 18px; margin-bottom: 25px;}
+.footer_list ul li {font-size: 13px; height: 30px; line-height: 30px;}
+.explain { clear: both; font-size: 12px; text-align: center;}
+.weixin {width: 128px; float: right;}
+.weixin .weixinimg{width: 127px; height: 129px;}
+.weixin .weixinimg img{width: 127px; height: 129px;}
+.weixin .weixintitle{font-size: 13px; margin-top: 15px;}
+h1.title{margin: 0; padding: 0; font-size: 48px; font-weight: normal; }
+.footertitle {font-size: 42px; margin: 0; padding: 0; font-weight: normal;text-align: right;}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{width: 10px; height: 10px; border-color: #FFF;}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span{background: #fff;}

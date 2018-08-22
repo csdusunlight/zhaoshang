@@ -1,0 +1,114 @@
+.buco{margin: 15px auto; padding: 0;}
+.service_new{width: 1240px; margin: 100px auto; overflow: hidden;}
+.img_list{width: 260px; height: 202px; float: left; text-align: center; font-size: 18px; color: #666;}
+.img_list p{margin-top: 25px;}
+.img_left{margin-right: 33px;}
+.img_center{margin: 0 33px;}
+.img_right{float: right;}
+.service_title{text-align: center; font-size: 30px; color: #222; margin-bottom: 80px;}
+.provide_service{width: 1240px; margin: 0 auto 100px; overflow: hidden;}
+.provide_list{width: 1080px; padding: 0 80px; border-bottom: 1px solid #999; height: 83px; font-size: 18px;}
+.provide_list ul{ width: 1080px;}
+.provide_list li{ width: 190px; height: 80px; line-height: 80px; font-size: 18px; color: #222; text-align: center; cursor: pointer;}
+.li_left{float: left;}
+.li_center{float: left; margin: 0 255px;}
+.li_right{float: right;}
+.provide_list li.active{ border-bottom: 4px solid #3289fd;}
+.provide_textes{padding: 60px 100px; height: 270px;}
+.provide_text_items{display: none;}
+.provide_text{width: 600px; float: left; padding: 60px 0;}
+.provide_top{padding-top: 30px;}
+.provide_text .text{background: url(images/Choice.png) no-repeat 0 0; height: 32px; line-height: 32px; padding-left: 60px; margin: 30px 0; }
+.provide_text .text span{font-size: 18px; color: #222; margin-right: 38px;}
+.provide_text .text i{font-size: 16px; color: #666;}
+.provide_img{width: 310px; float: left; position: relative; margin-left: 30px;}
+.img_seal{  width: 272px; height: 250px; position: absolute; top: 20px; left: 0;}
+.img_shadow{position: absolute; top: 140px; left: 0;}
+.img_sealon{animation: sealanimaon 1s forwards; -ms-animation: sealanimaon 1s forwards; -moz-animation: sealanimaon 1s forwards; -webkit-animation: sealanimaon 1s forwards; -o-animation: sealanimaon 1s forwards;}
+.img_shadowon{animation: shadowanimaon 1s forwards; -ms-animation: shadowanimaon 1s forwards; -moz-animation: shadowanimaon 1s forwards; -webkit-animation: shadowanimaon 1s forwards; -o-animation: shadowanimaon 1s forwards;}
+.img_sealooff{animation: sealanimaoff 1s forwards; -ms-animation: sealanimaoff 1s forwards; -moz-animation: sealanimaoff 1s forwards; -webkit-animation: sealanimaoff 1s forwards; -o-animation: sealanimaoff 1s forwards;}
+.img_shadowoff{animation: shadowanimaoff 1s forwards; -ms-animation: shadowanimaoff 1s forwards; -moz-animation: shadowanimaoff 1s forwards; -webkit-animation: shadowanimaoff 1s forwards; -o-animation: shadowanimaoff 1s forwards;}
+@keyframes sealanimaon{
+  from {top: 20px;}
+  to {top: -5px;}
+}
+@-moz-keyframes sealanimaon{
+  from {top: 20px;}
+  to {top: -5px;}
+}
+@-ms-keyframes sealanimaon{
+  from {top: 20px;}
+  to {top: -5px;}
+}
+@-webkit-keyframes sealanimaon{
+  from {top: 20px;}
+  to {top: -5px;}
+}
+@-o-keyframes sealanimaon{
+  from {top: 20px;}
+  to {top: -5px;}
+}
+
+@keyframes shadowanimaon{
+  from {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+  to {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+}
+@-ms-keyframes shadowanimaon{
+  from {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+  to {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+}
+@-moz-keyframes shadowanimaon{
+  from {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+  to {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+}
+@-webkit-keyframes shadowanimaon{
+  from {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+  to {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+}
+@-o-keyframes shadowanimaon{
+  from {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+  to {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+}
+
+
+@keyframes sealanimaoff{
+  from {top: -5px;}
+  to {top: 20px;}
+}
+@-ms-keyframes sealanimaoff{
+  from {top: -5px;}
+  to {top: 20px;}
+}
+@-moz-keyframes sealanimaoff{
+  from {top: -5px;}
+  to {top: 20px;}
+}
+@-webkit-keyframes sealanimaoff{
+  from {top: -5px;}
+  to {top: 20px;}
+}
+@-o-keyframes sealanimaoff{
+  from {top: -5px;}
+  to {top: 20px;}
+}
+
+@keyframes shadowanimaoff{
+  from {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+  to {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+}
+@-ms-keyframes shadowanimaoff{
+  from {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+  to {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+}
+@-moz-keyframes shadowanimaoff{
+  from {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+  to {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+}
+@-webkit-keyframes shadowanimaoff{
+  from {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+  to {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+}
+@-o-keyframes shadowanimaoff{
+  from {transform:scale(0.8); -ms-transform:scale(0.8); -moz-transform:scale(0.8); -webkit-transform:scale(0.8); -o-transform:scale(0.8);}
+  to {transform:scale(1); -ms-transform:scale(1); -moz-transform:scale(1); -webkit-transform:scale(1); -o-transform:scale(1);}
+}

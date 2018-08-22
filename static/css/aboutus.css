@@ -1,0 +1,210 @@
+.section1{ background: url(http://img.fuliworld.com/about_scr1.jpg) 50%;}
+.maxtitle{text-align: center;}
+.text {margin-top: 10%;}
+.text .maxtitle{font-size: 60px; position: relative; top: -45px; left: -30px;  opacity: 0;}
+.maxtitle_anima{ animation: sec1h1 0.7s forwards; -ms-animation: sec1h1 0.7s forwards; -moz-animation: sec1h1 0.7s forwards; -webkit-animation: sec1h1 0.7s forwards; -o-animation: sec1h1 0.7s forwards;}
+.text .biaoyu{font-size: 44px; margin-top: 6%; position: relative; top: 45px; left: 30px;  opacity: 0;}
+.biaoyu_anima{ animation: sec1p1 0.7s forwards; -ms-animation: sec1p1 0.7s forwards; -moz-animation: sec1p1 0.7s forwards; -webkit-animation: sec1p1 0.7s forwards; -o-animation: sec1p1 0.7s forwards;}
+.text .identification{font-size:26px ; margin-top: 8%; line-height: 60px; position: relative; top: 45px; left: 0; opacity: 0;}
+.identification_anima{ animation: sec1p2 0.7s forwards; -ms-animation: sec1p2 0.7s forwards; -moz-animation: sec1p2 0.7s forwards; -webkit-animation: sec1p2 0.7s forwards; -o-animation: sec1p2 0.7s forwards;}
+
+
+.section2{ background: url(http://img.fuliworld.com/about_scr2.jpg) 50%;}
+.straight_line {width: 4px; background: #494a5f; height: 100%; position: absolute; top: 0; margin-left: 50%; left: -2px;}
+.section2title{font-size: 38px; color: #494a5f; margin-right: 260px;}
+.course_list{margin-top: 3%; }
+.course_list h3{text-align: center; height: 40px; line-height: 40px; color: #494a5f; position: relative;}
+.course_list .line{display: inline-block; height: 2px; background: #494a5f; width: 80px; position: absolute;margin-left: 50%; left: -80px; top: 19px;}
+.course_list .circular{ display: inline-block; width: 20px; height: 20px; border-radius: 100%; background: #494a5f; position: absolute; top: 10px; margin-left: 50%; left: -10px;}
+.course_list .year{margin-left: 70px;}
+.course_list .explain{color: #494a5f; width: 900px; margin: 0 auto;}
+.explain_left{ width: 420px; float: left; text-align: right; margin-right: 30px;}
+.explain_left p{line-height: 32px;}
+.explain_right{ width: 420px; float: right; text-align: left; margin-left: 30px;}
+.explain_right p{line-height: 32px;}
+.course_martop {margin-top: 10%;}
+.course_top h3{text-align: center; height: 40px; line-height: 40px; color: #494a5f; position: relative;}
+.course_top .line{display: inline-block; height: 2px; background: #494a5f; width: 80px; position: absolute;margin-left: 50%; left: 0; top: 19px;}
+.course_top .circular{ display: inline-block; width: 20px; height: 20px; border-radius: 100%; background: #494a5f; position: absolute; top: 10px; margin-left: 50%; left: -10px;}
+.course_top .year{margin-left: -70px;}
+.course_top .explain{color: #494a5f; width: 900px; margin: 0 auto;}
+.p2015{position: relative; top: 40px; left: -30px; opacity: 0;}
+.p2016{position: relative; top: 40px; left: 30px; opacity: 0;}
+.p2017{position: relative; top: 40px; left: -30px; opacity: 0;}
+.p2018{position: relative; top: 40px; left: 30px; opacity: 0;}
+.pleft_anima{ animation: sec2pleft 0.7s forwards; -ms-animation: sec2pleft 0.7s forwards; -webkit-animation: sec2pleft 0.7s forwards; -moz-animation: sec2pleft 0.7s forwards; -o-animation: sec2pleft 0.7s forwards;}
+.pright_anima{ animation: sec2pright 0.7s forwards; -ms-animation: sec2pright 0.7s forwards; -moz-animation: sec2pright 0.7s forwards; -webkit-animation: sec2pright 0.7s forwards; -o-animation: sec2pright 0.7s forwards;}
+
+.section3{ background: url(http://img.fuliworld.com/about_scr3.jpg) 50%;}
+.basicstitle{font-size: 38px;}
+.culture{ margin-top: 10%; padding: 0 50px; position: relative;}
+.culture_list{width: 290px; height: 430px; position: absolute; top: 0; left: 50%; margin-left: -145px;}
+.culture_list img{width: 290px; height: 430px;}
+.culture_left{z-index: 1;}
+.culture_leftanima { animation: sec3imgleft 1s forwards; -ms-animation: sec3imgleft 1s forwards; -moz-animation: sec3imgleft 1s forwards; -webkit-animation: sec3imgleft 1s forwards; -o-animation: sec3imgleft 1s forwards;}
+.culture_center{z-index: 3;}
+.culture_right{z-index: 1;}
+.culture_rightanima { animation: sec3imgright 1s forwards; -ms-animation: sec3imgright 1s forwards; -moz-animation: sec3imgright 1s forwards; -webkit-animation: sec3imgright 1s forwards; -o-animation: sec3imgright 1s forwards;}
+
+.section4{ background: #000;}
+.sec4_box{width: 1240px; margin: 0 auto;}
+.zy-Slide{font-size: 12px;position:relative;width:1200px;height:555px;margin:115px auto 0;}
+.zy-Slide ul{position:relative; width:1200px;height:555px;margin:0;padding:0;}
+.zy-Slide li{position:absolute;list-style:none;background:#000;width:0;height:0;top:146px;left:377px;z-index:0;cursor:pointer;border-radius:3px;margin:0;padding:0;}
+.zy-Slide li img{width:100%;height:100%;vertical-align:middle;}
+.click_left{position: absolute; width: 43px; height: 74px; background: url(../images/left.png) no-repeat; top: 50%; margin-top: -115px; left: -63px; cursor: pointer;}
+.click_right{position: absolute; width: 43px; height: 74px; background: url(../images/right.png) no-repeat; top: 50%; margin-top: -115px; right: -63px; cursor: pointer;}
+.section5{ background: url(http://img.fuliworld.com/about_scr5.jpg) 50%;}
+.addme{margin-top: 7%;}
+.addme p{margin-top: 4%; color: #fff; font-size: 24px; text-align: left; padding-left: 405px;}
+.addme p span{ display: inline-block; width: 100px; margin-right: 50px; font-size: 24px;}
+/* 第一屏 */
+@keyframes sec1h1{
+  from {top: -45px; left: -30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-ms-keyframes sec1h1{
+  from {top: -45px; left: -30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-moz-keyframes sec1h1{
+  from {top: -45px; left: -30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-webkit-keyframes sec1h1{
+  from {top: -45px; left: -30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-o-keyframes sec1h1{
+  from {top: -45px; left: -30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+
+@keyframes sec1p1{
+  from {top: 45px; left: 30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-ms-keyframes sec1p1{
+  from {top: 45px; left: 30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-moz-keyframes sec1p1{
+  from {top: 45px; left: 30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-webkit-keyframes sec1p1{
+  from {top: 45px; left: 30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-o-keyframes sec1p1{
+  from {top: 45px; left: 30px; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+
+@keyframes sec1p2{
+  from {top: 45px; opacity: 0;}
+  to { top: 0; opacity: 1;}
+}
+
+@-ms-keyframes sec1p2{
+  from {top: 45px; opacity: 0;}
+  to { top: 0; opacity: 1;}
+}
+@-moz-keyframes sec1p2{
+  from {top: 45px; opacity: 0;}
+  to { top: 0; opacity: 1;}
+}
+@-webkit-keyframes sec1p2{
+  from {top: 45px; opacity: 0;}
+  to { top: 0; opacity: 1;}
+}
+@-o-keyframes sec1p2{
+  from {top: 45px; opacity: 0;}
+  to { top: 0; opacity: 1;}
+}
+
+/*第二屏*/
+@keyframes sec2pleft{
+  from {top: 40px; left: -30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-ms-keyframes sec2pleft{
+  from {top: 40px; left: -30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-moz-keyframes sec2pleft{
+  from {top: 40px; left: -30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-webkit-keyframes sec2pleft{
+  from {top: 40px; left: -30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-o-keyframes sec2pleft{
+  from {top: 40px; left: -30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+
+@keyframes sec2pright{
+  from {top: 40px; left: 30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-ms-keyframes sec2pright{
+  from {top: 40px; left: 30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-moz-keyframes sec2pright{
+  from {top: 40px; left: 30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-webkit-keyframes sec2pright{
+  from {top: 40px; left: 30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+@-o-keyframes sec2pright{
+  from {top: 40px; left: 30; opacity: 0;}
+  to { top: 0; left: 0; opacity: 1;}
+}
+
+/*第三屏*/
+@keyframes sec3imgleft{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -moz-transform: scaleX(0); -webkit-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 0; margin-left: 0; transform: scaleX(1); -ms-transform: scaleX(1); -moz-transform: scaleX(1); -webkit-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+@-ms-keyframes sec3imgleft{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -moz-transform: scaleX(0); -webkit-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 0; margin-left: 0; transform: scaleX(1); -ms-transform: scaleX(1); -moz-transform: scaleX(1); -webkit-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+@-moz-keyframes sec3imgleft{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -moz-transform: scaleX(0); -webkit-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 0; margin-left: 0; transform: scaleX(1); -ms-transform: scaleX(1); -moz-transform: scaleX(1); -webkit-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+@-webkit-keyframes sec3imgleft{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -moz-transform: scaleX(0); -webkit-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 0; margin-left: 0; transform: scaleX(1); -ms-transform: scaleX(1); -moz-transform: scaleX(1); -webkit-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+@-o-keyframes sec3imgleft{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -moz-transform: scaleX(0); -webkit-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 0; margin-left: 0; transform: scaleX(1); -ms-transform: scaleX(1); -moz-transform: scaleX(1); -webkit-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+
+@keyframes sec3imgright{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -webkit-transform: scaleX(0); -moz-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 100%; margin-left: -290px; transform: scaleX(1); -ms-transform: scaleX(1); -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+@-ms-keyframes sec3imgright{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -webkit-transform: scaleX(0); -moz-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 100%; margin-left: -290px; transform: scaleX(1); -ms-transform: scaleX(1); -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+@-moz-keyframes sec3imgright{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -webkit-transform: scaleX(0); -moz-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 100%; margin-left: -290px; transform: scaleX(1); -ms-transform: scaleX(1); -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+@-webkit-keyframes sec3imgright{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -webkit-transform: scaleX(0); -moz-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 100%; margin-left: -290px; transform: scaleX(1); -ms-transform: scaleX(1); -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+@-o-keyframes sec3imgright{
+  from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -webkit-transform: scaleX(0); -moz-transform: scaleX(0); -o-transform: scaleX(0);}
+  to { top: 0; left: 100%; margin-left: -290px; transform: scaleX(1); -ms-transform: scaleX(1); -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -o-transform: scaleX(1);}
+}
