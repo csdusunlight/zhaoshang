@@ -21,6 +21,7 @@ body{
 .header .logo { float: left; width: 146px;}
 .header .nav{ float: right; width: 625px; text-align: center; }
 .header .nav ul li{width: 100px; margin: 0 27px; float: left; height: 50px; line-height: 50px; cursor: pointer;}
+.header .nav ul li a {color: #333;}
 .header .nav ul li.item_active{border-bottom: 2px solid #fff;}
 .buco .nav ul li.item_active{border-bottom: 2px solid #1991eb;}
 .fp-tableCell {position: relative;}
