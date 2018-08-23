@@ -9,14 +9,36 @@
     <script type="text/javascript">
       $(function () {
         $('.provide_text_items').eq(0).show();
+        var i = 1;
         $('.provide_list ul li').click(function () {
           var _index  = $(this).index();
+          i = _index
           $('.provide_text_items').eq(_index).show().siblings().hide();
-          $('.provide_img').find('.img_seal').removeClass('.img_sealon');
-          $('.provide_img').find('.img_seal').removeClass('.img_sealooff');
-          $('.provide_img').find('.img_shadow').removeClass('.img_shadowon');
-          $('.provide_img').find('.img_shadow').removeClass('.img_shadowoff');
-          $(this).addClass("active").siblings().removeClass("active");
+          $('.provide_list ul li').eq(_index).addClass("active").siblings().removeClass("active");
+        })
+        var timesval = null;
+        function setval () {
+          if (i > 2) {
+            i = 0
+          }
+          console.log(i)
+          timesval = setTimeout(function () {
+            $('.provide_text_items').eq(i).show().siblings().hide();
+            $('.provide_list ul li').eq(i).addClass("active").siblings().removeClass("active");
+            i++;
+            setval ();
+          }, 2000)
+        }
+        setval ()
+        $('.provide_textes').hover(function () {
+          clearTimeout(timesval)
+        }, function () {
+          setval ()
+        })
+        $('.provide_list').hover(function () {
+          clearTimeout(timesval)
+        }, function () {
+          setval ()
         })
         $('.provide_img_left').hover(function () {
           $(this).find('.img_seal').addClass('img_sealon');

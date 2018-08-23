@@ -25,8 +25,8 @@ body{
 .header .nav ul li.item_active{border-bottom: 2px solid #fff;}
 .buco .nav ul li.item_active{border-bottom: 2px solid #1991eb;}
 .fp-tableCell {position: relative;}
-.interVal {width: 1240px; height: 760px; margin: 0 auto; text-align: center; overflow: hidden;}
-.initIal {width: 1240px; height: 100%; margin: 0 auto; text-align: center; overflow: hidden;}
+.interVal {width: 1240px; height: 760px; margin: 0 auto; text-align: center; }
+.initIal {width: 1240px; height: 100%; margin: 0 auto; text-align: center;}
 .initmaxheight{width: 100%; height: 96%; margin: 0 auto; padding: 2% 0; text-align: center; overflow: hidden;}
 .initwidthmin{padding: 1% 0;}
 .location {position: relative;}

@@ -26,6 +26,8 @@
 .service_box {width: 1020px; height: 440px; margin: 0 auto; margin-top: 150px; perspective: 500; opacity: 0;}
 
 .service_boxanima { animation: sec3caseimg 1s forwards; -moz-animation: sec3caseimg 1s forwards; -ms-animation: sec3caseimg 1s forwards; -webkit-animation: sec3caseimg 1s forwards; -o-animation: sec3caseimg 1s forwards;}
+.service_box .service_list{width: 340px; height: 220px; float: left; }
+.service_box .service_list img{width: 340px; height: 220px;}
 .service_box .service_item { width: 340px; height: 220px; background: #000; position: relative; overflow: hidden;}
 .service_box .service_item h3 {font-size: 18px; font-weight: normal; display: inline-block; width: 250px; margin-top: 63px;  padding: 0 30px;}
 .service_box .service_item p {font-size: 16px; display: inline-block; line-height: 26px; margin-top: 20px;  padding: 0 30px;}

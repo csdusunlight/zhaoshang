@@ -1,6 +1,6 @@
 .buco{margin: 15px auto; padding: 0;}
 .service_new{width: 1240px; margin: 100px auto; overflow: hidden;}
-.img_list{width: 260px; height: 202px; float: left; text-align: center; font-size: 18px; color: #666;}
+.img_list{width: 260px; float: left; text-align: center; font-size: 18px; color: #666;}
 .img_list p{margin-top: 25px;}
 .img_left{margin-right: 33px;}
 .img_center{margin: 0 33px;}
