@@ -1,6 +1,6 @@
 .section1{ background: url(http://img.fuliworld.com/about_scr1.jpg) 50%;}
 .maxtitle{text-align: center;}
-.text {margin-top: 10%;}
+.text {width: 1240px; position: absolute; top: 50%; left: 50%; margin-top: -245px; margin-left: -620px;}
 .text .maxtitle{font-size: 60px; position: relative; top: -45px; left: -30px;  opacity: 0;}
 .maxtitle_anima{ animation: sec1h1 0.7s forwards; -ms-animation: sec1h1 0.7s forwards; -moz-animation: sec1h1 0.7s forwards; -webkit-animation: sec1h1 0.7s forwards; -o-animation: sec1h1 0.7s forwards;}
 .text .biaoyu{font-size: 44px; margin-top: 6%; position: relative; top: 45px; left: 30px;  opacity: 0;}
@@ -12,22 +12,22 @@
 .section2{ background: url(http://img.fuliworld.com/about_scr2.jpg) 50%;}
 .straight_line {width: 4px; background: #494a5f; height: 100%; position: absolute; top: 0; margin-left: 50%; left: -2px;}
 .section2title{font-size: 38px; color: #494a5f; margin-right: 260px;}
-.course_list{margin-top: 3%; }
+.course_list{margin-top: 3%; font-size: 20px;}
 .course_list h3{text-align: center; height: 40px; line-height: 40px; color: #494a5f; position: relative;}
 .course_list .line{display: inline-block; height: 2px; background: #494a5f; width: 80px; position: absolute;margin-left: 50%; left: -80px; top: 19px;}
 .course_list .circular{ display: inline-block; width: 20px; height: 20px; border-radius: 100%; background: #494a5f; position: absolute; top: 10px; margin-left: 50%; left: -10px;}
-.course_list .year{margin-left: 70px;}
-.course_list .explain{color: #494a5f; width: 900px; margin: 0 auto;}
-.explain_left{ width: 420px; float: left; text-align: right; margin-right: 30px;}
-.explain_left p{line-height: 32px;}
-.explain_right{ width: 420px; float: right; text-align: left; margin-left: 30px;}
-.explain_right p{line-height: 32px;}
+.course_list .year{margin-left: 95px;  font-size: 20px;}
+.course_list .explain{color: #494a5f; width: 1240px; margin: 0 auto; font-size: 20px;}
+.explain_left{ width: 500px; float: left; text-align: right; margin-left: 50px;}
+.explain_left p{line-height: 32px;  font-size: 20px;}
+.explain_right{ width: 500px; float: right; text-align: left; margin-right: 50px;}
+.explain_right p{line-height: 32px;  font-size: 20px;}
 .course_martop {margin-top: 10%;}
-.course_top h3{text-align: center; height: 40px; line-height: 40px; color: #494a5f; position: relative;}
+.course_top h3{text-align: center; height: 40px; line-height: 40px; color: #494a5f; position: relative;  font-size: 20px;}
 .course_top .line{display: inline-block; height: 2px; background: #494a5f; width: 80px; position: absolute;margin-left: 50%; left: 0; top: 19px;}
 .course_top .circular{ display: inline-block; width: 20px; height: 20px; border-radius: 100%; background: #494a5f; position: absolute; top: 10px; margin-left: 50%; left: -10px;}
-.course_top .year{margin-left: -70px;}
-.course_top .explain{color: #494a5f; width: 900px; margin: 0 auto;}
+.course_top .year{margin-left: -95px;  font-size: 20px;}
+.course_top .explain{color: #494a5f; width: 1240px; margin: 0 auto;}
 .p2015{position: relative; top: 40px; left: -30px; opacity: 0;}
 .p2016{position: relative; top: 40px; left: 30px; opacity: 0;}
 .p2017{position: relative; top: 40px; left: -30px; opacity: 0;}
@@ -37,7 +37,7 @@
 
 .section3{ background: url(http://img.fuliworld.com/about_scr3.jpg) 50%;}
 .basicstitle{font-size: 38px;}
-.culture{ margin-top: 10%; padding: 0 50px; position: relative;}
+.culture{ margin-top: 180px; padding: 0 50px; position: relative;}
 .culture_list{width: 290px; height: 430px; position: absolute; top: 0; left: 50%; margin-left: -145px;}
 .culture_list img{width: 290px; height: 430px;}
 .culture_left{z-index: 1;}
@@ -58,6 +58,10 @@
 .addme{margin-top: 7%;}
 .addme p{margin-top: 4%; color: #fff; font-size: 24px; text-align: left; padding-left: 405px;}
 .addme p span{ display: inline-block; width: 100px; margin-right: 50px; font-size: 24px;}
+
+.pddd i{display: inline-block; width: 6px; height: 6px; border-radius: 100%; background-color:#000 ; margin-left: 10px; opacity: 0;}
+.pddianima{ animation: pddi1 0.3s forwards; -ms-animation: pddi1 0.3s forwards; -moz-animation: pddi1 0.3s forwards; -webkit-animation: pddi1 0.3s forwards; -o-animation: pddi1 0.3s forwards;}
+
 /* 第一屏 */
 @keyframes sec1h1{
   from {top: -45px; left: -30px; opacity: 0;}
@@ -207,4 +211,25 @@
 @-o-keyframes sec3imgright{
   from { top: 0; left: 50%; margin-left: -145px; transform: scaleX(0); -ms-transform: scaleX(0); -webkit-transform: scaleX(0); -moz-transform: scaleX(0); -o-transform: scaleX(0);}
   to { top: 0; left: 100%; margin-left: -290px; transform: scaleX(1); -ms-transform: scaleX(1); -webkit-transform: scaleX(1); -moz-transform: scaleX(1); -o-transform: scaleX(1);}
+}
+
+@keyframes pddi1 {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+@-ms-keyframes pddi1 {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+@-moz-keyframes pddi1 {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+@-webkit-keyframes pddi1 {
+  from { opacity: 0;}
+  to { opacity: 1;}
+}
+@-o-keyframes pddi1 {
+  from { opacity: 0;}
+  to { opacity: 1;}
 }

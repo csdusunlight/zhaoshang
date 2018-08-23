@@ -4,46 +4,51 @@
 .section3 p.service_text { position: relative; bottom: -120%;}
 .section4 p { display: none;}
 .section1 { background: url(http://img.fuliworld.com/index01.jpg) 50%; position: relative;}
-.section1 .text {width: 1240px; height:220px; margin:0 auto; position: absolute; bottom: 30%; margin-left: 50%; left: -620px;}
+.section1 .text {width: 1240px; height:220px; margin:0 auto; position: absolute; top: 50%; margin-left: 50%; left: -620px; margin-top: -110px;}
+
 .section1 .text h3{font-size: 66px; font-weight: normal; padding: 0; margin: 0; position: relative; animation: sec1h3 1.5s; -moz-animation: sec1h3 1.5s; -webkit-animation: sec1h3 1.5s; -o-animation: sec1h3 1.5s; -ms-animation: sec1h3 1.5s;}
 .section1 .text p{margin-top: 70px; font-size: 48px; position: relative; animation: sec1p 1.5s; -moz-animation: sec1p 1.5s; -ms-animation: sec1p 1.5s; -webkit-animation: sec1p 1.5s; -o-animation: sec1p 1.5s;}
 
 .section2 { background: url(http://img.fuliworld.com/index02.jpg) 50%;}
 .section2 .platform { position: relative;}
-.platform .advan{height: 270px; margin: 5% 0;}
+.platform .advan{height: 270px; margin:80px 0;}
+
 .advan img{opacity: 0;}
 .src2animation img{ animation: sec2img 1.5s forwards; -moz-animation: sec2img 1.5s forwards; -ms-animation: sec2img 1.5s forwards; -webkit-animation: sec2img 1.5s forwards; -o-animation: sec2img 1.5s forwards;}
 .src2animationbox1 { animation: sec2box1 0.3s forwards; -moz-animation: sec2box1 0.3s forwards; -ms-animation: sec2box1 0.3s forwards; -webkit-animation: sec2box1 0.3s forwards; -o-animation: sec2box1 0.3s forwards;}
 .platform .fons_s{font-size: 24px;}
 .platform .fons_m{font-size: 18px; margin-top: 25px;}
-.platform .resources{ width: 1240px; height: 60px; margin-left: 50px; position: absolute; bottom: 7%; left: 0; }
-.platform .resources ul li.reslist{ width: 148px; height:58px; line-height: 58px; border: 1px solid #fff; float: left; font-size: 20px; margin: 0 20px; position: relative; opacity: 0;}
+.platform .resources{ width: 1240px; height: 60px; margin-left: 50px; position: absolute; bottom: 0; left: 0; }
+.platform .resources ul li.reslist{ width: 146px; height:56px; line-height: 56px; border: 2px solid #fff; float: left; font-size: 20px; margin: 0 20px; position: relative; opacity: 0;}
 
 .section3 { background: url(http://img.fuliworld.com/index03.jpg) 50%;}
-.service p.service_text{font-size: 24px; margin-top: 3%;}
-.service_box {width: 840px; height: 440px; margin: 0 auto; margin-top: 8%; perspective: 500; opacity: 0;}
+.service p.service_text{font-size: 24px; margin-top: 30px;}
+.service_box {width: 1020px; height: 440px; margin: 0 auto; margin-top: 150px; perspective: 500; opacity: 0;}
+
 .service_boxanima { animation: sec3caseimg 1s forwards; -moz-animation: sec3caseimg 1s forwards; -ms-animation: sec3caseimg 1s forwards; -webkit-animation: sec3caseimg 1s forwards; -o-animation: sec3caseimg 1s forwards;}
-.service_box .service_list{width: 280px; height: 180px; float: left; }
-.service_box .service_list img{width: 280px; height: 180px;}
-.service_box .service_item { width: 250px; height: 180px; background: #000; padding: 0 15px;}
-.service_box .service_item h3 {font-size: 18px; font-weight: normal; display: inline-block; width: 250px; margin-top: 35px;}
-.service_box .service_item p {font-size: 16px; display: inline-block; line-height: 26px; margin-top: 20px;}
+.service_box .service_item { width: 340px; height: 220px; background: #000; position: relative; overflow: hidden;}
+.service_box .service_item h3 {font-size: 18px; font-weight: normal; display: inline-block; width: 250px; margin-top: 63px;  padding: 0 30px;}
+.service_box .service_item p {font-size: 16px; display: inline-block; line-height: 26px; margin-top: 20px;  padding: 0 30px;}
+.service_box .service_item a {display: block; position: absolute; height: 50px; line-height: 45px; text-align: center; bottom: -55px; left: 0; width: 100%; color: #fff; font-size: 14px;}
+.service_item:hover a{animation: service_itemkey 1s forwards; -moz-animation: service_itemkey 1s forwards; -ms-animation: service_itemkey 1s forwards; -webkit-animation: service_itemkey 1s forwards; -o-animation: service_itemkey 1s forwards;}
 
 .section4 { background-color: #404a59;}
-.partner{padding: 0 60px;}
-.partner_left {width: 400px; float: left; position: relative; left: -200px; top: 0; opacity: 0;}
-.partner_leftanima { animation: sec4leftbox 0.8s forwards; -moz-animation: sec4leftbox 0.8s forwards; -ms-animation: sec4leftbox 0.8s forwards; -webkit-animation: sec4leftbox 0.8s forwards; -o-animation: sec4leftbox 0.8s forwards;}
+.partner{padding: 0 60px; margin-top: 65px;}
+.partner_left {width: 400px; height: 630px; float: left; position: relative; left: -200px; top: -50%; opacity: 0;}
+.partner_leftanima { animation:.sec4leftbox 0.8s forwards; -moz-animation: sec4leftbox 0.8s forwards; -ms-animation: sec4leftbox 0.8s forwards; -webkit-animation: sec4leftbox 0.8s forwards; -o-animation: sec4leftbox 0.8s forwards;}
 .partner_right {width: 400px; float: right; position: relative; right: -200px; top: 0; opacity: 0;}
 .partner_rightanima { animation: sec4rightbox 0.8s forwards; -moz-animation: sec4rightbox 0.8s forwards; -ms-animation: sec4rightbox 0.8s forwards; -webkit-animation: sec4rightbox 0.8s forwards; -o-animation: sec4rightbox 0.8s forwards;}
-.partner_list { height: 676px;}
-.partner_list img{width: 400px; height: 630px; line-height: 676px;}
+.partner_list { height: 630px;}
+.partner_list img{width: 400px; height: 630px; line-height: 630px;}
 .partner_text { width: 316px; font-size: 24px; float: left; text-align: center;}
-.partner_text p {height: 676px; line-height: 676px;}
+.partner_text p {height: 630px; line-height: 630px; font-size: 24px;}
 
 .section5 { background: url(http://img.fuliworld.com/index05.jpg) 50%;}
 .slogan{text-align: right; margin-right: 80px; margin-top: 5%; opacity: 0;}
 .slogan_anima{ animation: sec5slogan 1s forwards; -moz-animation: sec5slogan 1s forwards; -ms-animation: sec5slogan 1s forwards; -webkit-animation: sec5slogan 1s forwards; -o-animation: sec5slogan 1s forwards;}
-
+.platform .resources{ width: 1140px; height: 60px; margin:0 50px; position: absolute; bottom: 0; left: 0; }
+.resources_box {position: relative; width: 1140px; margin: 0 auto;}
+.resources_box ul{position: absolute; left: 0; top: 0;} 
 /* 第一屏 */
 @keyframes sec1h3{
   from {top: -80px; opacity: 0.3;}
@@ -212,4 +217,25 @@
 @-o-keyframes sec5slogan{
   from { opacity: 0.3; transform:scale(1.2); -o-transform:scale(1.2);}
   to { opacity: 1; transform:scale(1); -o-transform:scale(1);}
+}
+
+@keyframes service_itemkey{
+  from {bottom: -50px; opacity: 0.3;}
+  to { bottom: 0; opacity: 1;}
+}
+@-ms-keyframes service_itemkey{
+  from {bottom: -50px; opacity: 0.3;}
+  to { bottom: 0; opacity: 1;}
+}
+@-moz-keyframes service_itemkey{
+  from {bottom: -50px; opacity: 0.3;}
+  to { bottom: 0; opacity: 1;}
+}
+@-webkit-keyframes service_itemkey{
+  from {bottom: -50px; opacity: 0.3;}
+  to { bottom: 0; opacity: 1;}
+}
+@-o-keyframes service_itemkey{
+  from {bottom: -50px; opacity: 0.3;}
+  to { bottom: 0; opacity: 1;}
 }

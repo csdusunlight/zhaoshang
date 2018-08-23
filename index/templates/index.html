@@ -46,6 +46,46 @@
           },
           onLeave: function(index, direction){}
         });
+        var oul = $('.resources_box ul');
+        var timeId = null;
+        var oulHtml = oul.html();
+        oul.html(oulHtml+oulHtml);
+        var ali = $('.resources_box ul li');
+        var aliWidth = ali.eq(0).width() + 4 + 40;
+        var aliSize = ali.size();
+        console.log(aliWidth)
+        var ulWidth = aliWidth*aliSize;
+        oul.width(ulWidth);
+        
+        var speed = -2;
+      
+        function slider(){
+          if(speed<0){
+            if(oul.css('left')==-ulWidth/2+'px'){
+            oul.css('left',0);
+            }
+            oul.css('left','+=-2px');
+          }
+          if(speed>0){
+            if(oul.css('left')=='0px'){
+            oul.css('left',-ulWidth/2+'px');
+            }
+            oul.css('left','+='+speed+'px');
+          }
+          
+         }
+        
+        // setInterval()函数的作用是：每隔一段时间，执行该函数里的代码
+         timeId = setInterval(slider,30);
+      
+        $('.resources_box').mouseover(function(){
+          // clearInterval()函数的作用是用来清除定时器
+          clearInterval(timeId);
+        });
+      
+        $('.resources_box').mouseout(function(){
+          timeId = setInterval(slider,30);
+        });
       })
     </script>
   </head>
@@ -80,14 +120,16 @@
           <p class="fons_s">媒体资源</p>
           <p class="fons_m">众多媒体资源总有一种适合你</p>
           <div class="resources">
-            <ul>
-              <li class="reslist">芒果TV</li>
-              <li class="reslist">壁合DSP</li>
-              <li class="reslist">京东DSP</li>
-              <li class="reslist">口袋记账</li>
-              <li class="reslist">环球网</li>
-              <li class="reslist">花生wifi</li>
-            </ul>
+            <div class="resources_box">
+              <ul>
+                <li class="reslist">芒果TV</li>
+                <li class="reslist">壁合DSP</li>
+                <li class="reslist">京东DSP</li>
+                <li class="reslist">口袋记账</li>
+                <li class="reslist">环球网</li>
+                <li class="reslist">花生wifi</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -101,7 +143,7 @@
             <div class="service_list service_img"><img src="/static/images/women.png"/></div>
             <div class="service_list service_item"><h3>效果营销</h3><p>挖福利，福利联盟，CPS，CPT合作</p></div>
             <div class="service_list service_img"><img src="/static/images/women3.png"/></div>
-            <div class="service_list service_item"><h3>效果营销</h3><p>ASO， SEM ，SEO等</p></div>
+            <div class="service_list service_item"><h3>优化推广</h3><p>ASO， SEM ，SEO等</p></div>
           </div>
         </div>
       </div>
@@ -129,20 +171,20 @@
                 </ul>
               </div>
               <div class="footer_list">
+                <h4 class="mintitle">产品与服务</h4>
+                <ul class="home_ul">
+                  <li class="home_list">效果营销</li>
+                  <li class="home_list">品牌宣传</li>
+                  <li class="home_list">推广优化</li>
+                </ul>
+              </div>
+              <div class="footer_list">
                 <h4 class="mintitle">关于我们</h4>
                 <ul class="home_ul">
                   <li class="home_list">发展历程</li>
                   <li class="home_list">企业文化</li>
                   <li class="home_list">公司动态</li>
                   <li class="home_list">加入我们</li>
-                </ul>
-              </div>
-              <div class="footer_list">
-                <h4 class="mintitle">产品与服务</h4>
-                <ul class="home_ul">
-                  <li class="home_list">垂直类广告投放</li>
-                  <li class="home_list">效果优化</li>
-                  <li class="home_list">理财超市</li>
                 </ul>
               </div>
               <div class="footer_list" style="display: none;">
@@ -156,7 +198,7 @@
                 <div class="weixinimg">
                   <img src="/static/images/kfwx.png"/>
                 </div>
-                <p class="weixintitle">福利联盟官微</p>
+                <p class="weixintitle">客服微信</p>
               </div>
             </div>
             <p class="explain">Copyright © 2016-2026 福利天下 版权所有 备案号：湘ICP备18007376号-4<span>联系电话：0731-85586375</span></p>
