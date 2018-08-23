@@ -16,6 +16,7 @@
       $(function() {
         $('#dowebok').fullpage({
           'navigation': true,
+          'anchors': ['fullPage1', 'fullPage2', 'fullPage3','fullPage4', 'fullPage5'],
           afterLoad: function(anchorLink, index){
             if(index == 1){
               $('.section1').find('p').delay(500).animate({
@@ -165,26 +166,26 @@
               <div class="footer_list">
                 <h4 class="mintitle">首页</h4>
                 <ul class="home_ul">
-                  <li class="home_list">核心优势</li>
-                  <li class="home_list">核心服务</li>
-                  <li class="home_list">合作伙伴</li>
+                  <li class="home_list"><a href="/#fullPage2">核心优势</a></li>
+                  <li class="home_list"><a href="/#fullPage3">核心服务</a></li>
+                  <li class="home_list"><a href="/#fullPage4">合作伙伴</a></li>
                 </ul>
               </div>
               <div class="footer_list">
                 <h4 class="mintitle">产品与服务</h4>
                 <ul class="home_ul">
-                  <li class="home_list">效果营销</li>
-                  <li class="home_list">品牌宣传</li>
-                  <li class="home_list">推广优化</li>
+                  <li class="home_list"><a href="/product.html#service">效果营销</a></li>
+                  <li class="home_list"><a href="/product.html#service">品牌宣传</a></li>
+                  <li class="home_list"><a href="/product.html#service">推广优化</a></li>
                 </ul>
               </div>
               <div class="footer_list">
                 <h4 class="mintitle">关于我们</h4>
                 <ul class="home_ul">
-                  <li class="home_list">发展历程</li>
-                  <li class="home_list">企业文化</li>
-                  <li class="home_list">公司动态</li>
-                  <li class="home_list">加入我们</li>
+                  <li class="home_list"><a href="/aboutus.html#fullPage2">发展历程</a></li>
+                  <li class="home_list"><a href="/aboutus.html#fullPage3">企业文化</a></li>
+                  <li class="home_list"><a href="/aboutus.html#fullPage4">公司动态</a></li>
+                  <li class="home_list"><a href="/aboutus.html#fullPage5">加入我们</a></li>
                 </ul>
               </div>
               <div class="footer_list" style="display: none;">
