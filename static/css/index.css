@@ -49,7 +49,7 @@
 .slogan{text-align: right; margin-right: 80px; margin-top: 5%; opacity: 0;}
 .slogan_anima{ animation: sec5slogan 1s forwards; -moz-animation: sec5slogan 1s forwards; -ms-animation: sec5slogan 1s forwards; -webkit-animation: sec5slogan 1s forwards; -o-animation: sec5slogan 1s forwards;}
 .platform .resources{ width: 1140px; height: 60px; margin:0 50px; position: absolute; bottom: 0; left: 0; }
-.resources_box {position: relative; width: 1140px; margin: 0 auto;}
+.resources_box {position: relative; width: 1140px; margin: 0 auto; overflow: hidden; height: 60px;}
 .resources_box ul{position: absolute; left: 0; top: 0;} 
 /* 第一屏 */
 @keyframes sec1h3{
