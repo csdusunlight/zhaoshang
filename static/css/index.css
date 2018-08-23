@@ -46,7 +46,7 @@
 .partner_text p {height: 630px; line-height: 630px; font-size: 24px;}
 
 .section5 { background: url(http://img.fuliworld.com/index05.jpg) 50%;}
-.slogan{text-align: right; margin-right: 80px; margin-top: 5%; opacity: 0;}
+.slogan{text-align: right; margin-right: 130px; margin-top: 5%; opacity: 0;}
 .slogan_anima{ animation: sec5slogan 1s forwards; -moz-animation: sec5slogan 1s forwards; -ms-animation: sec5slogan 1s forwards; -webkit-animation: sec5slogan 1s forwards; -o-animation: sec5slogan 1s forwards;}
 .platform .resources{ width: 1140px; height: 60px; margin:0 50px; position: absolute; bottom: 0; left: 0; }
 .resources_box {position: relative; width: 1140px; margin: 0 auto; overflow: hidden; height: 60px;}

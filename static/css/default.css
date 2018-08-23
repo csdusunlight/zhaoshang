@@ -46,6 +46,6 @@ body{
 .weixin .weixinimg img{width: 127px; height: 129px;}
 .weixin .weixintitle{font-size: 13px; margin-top: 15px; text-align: center;}
 h1.title{margin: 0; padding: 0; font-size: 48px; font-weight: normal; }
-.footertitle {font-size: 42px; margin: 0; padding: 0; font-weight: normal;text-align: right; padding-top: 50px;}
+.footertitle {font-size: 42px; margin: 0; padding: 0; font-weight: normal;text-align: center; padding-top: 50px;}
 #fp-nav ul li a span, .fp-slidesNav ul li a span{width: 10px; height: 10px; border-color: #FFF;}
 #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span{background: #fff;}
