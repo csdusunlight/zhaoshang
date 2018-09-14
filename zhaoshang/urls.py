@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from index import views
 from django.conf.urls import url
+from django.urls.conf import include
 
 urlpatterns = [
     path('', views.IndexView.as_view()),
@@ -24,4 +25,5 @@ urlpatterns = [
     url('^product/$', views.product, name='product'),
     url('^aboutus/$', views.aboutus, name='aboutus'),
     url('^cooperate/$', views.cooperate, name='cooperate'),
+    url('^tbkapi/', include('tbkapi.urls', namespace='tbkapi')),
 ]
